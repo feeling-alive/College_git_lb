@@ -1,0 +1,137 @@
+object createRec: TcreateRec
+  Left = 380
+  Height = 282
+  Top = 477
+  Width = 357
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Создание записи'
+  ClientHeight = 282
+  ClientWidth = 357
+  Color = clWindow
+  OnShow = FormShow
+  Position = poMainFormCenter
+  LCLVersion = '3.2.0.0'
+  object moto: TLabel
+    Left = 13
+    Height = 15
+    Top = 10
+    Width = 55
+    Caption = 'Название:'
+  end
+  object eName: TEdit
+    Left = 13
+    Height = 23
+    Top = 32
+    Width = 336
+    TabOrder = 0
+  end
+  object year: TLabel
+    Left = 13
+    Height = 15
+    Top = 63
+    Width = 22
+    Caption = 'Год:'
+  end
+  object ePetrol: TCheckBox
+    Left = 324
+    Height = 17
+    Top = 88
+    Width = 18
+    TabOrder = 1
+  end
+  object eYear: TEdit
+    Left = 14
+    Height = 23
+    Top = 83
+    Width = 80
+    TabOrder = 2
+  end
+  object petrol: TLabel
+    Left = 184
+    Height = 15
+    Top = 88
+    Width = 128
+    Caption = 'Бензиновый двигатель:'
+  end
+  object motopower: TLabel
+    Left = 14
+    Height = 15
+    Top = 141
+    Width = 93
+    Caption = 'Мощность (л.с.):'
+  end
+  object ePower: TEdit
+    Left = 14
+    Height = 23
+    Top = 160
+    Width = 80
+    TabOrder = 3
+    OnChange = ePowerChange
+  end
+  object motocolor: TLabel
+    Left = 14
+    Height = 15
+    Top = 192
+    Width = 29
+    Caption = 'Цвет:'
+  end
+  object eColor: TComboBox
+    Left = 14
+    Height = 23
+    Top = 211
+    Width = 100
+    ItemHeight = 15
+    ItemIndex = 0
+    Items.Strings = (
+      'Белый'
+      'Черный'
+      'Красный'
+      'Синий'
+      'Желтый'
+      'Коричневый'
+      'Зеленый'
+      'Мультицвет'
+      'Другой'
+    )
+    TabOrder = 4
+    Text = 'Белый'
+  end
+  object mSave: TBitBtn
+    Left = 14
+    Height = 30
+    Top = 243
+    Width = 157
+    Caption = 'Добавить'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    TabOrder = 5
+  end
+  object mCancel: TBitBtn
+    Left = 186
+    Height = 30
+    Top = 243
+    Width = 157
+    Cancel = True
+    Caption = 'Отменить'
+    Kind = bkCancel
+    ModalResult = 2
+    TabOrder = 6
+  end
+  object mark: TLabel
+    Left = 224
+    Height = 15
+    Top = 144
+    Width = 39
+    Caption = 'Марка:'
+  end
+  object emark: TEdit
+    Left = 224
+    Height = 23
+    Top = 160
+    Width = 80
+    TabOrder = 7
+    OnChange = ePowerChange
+  end
+end
