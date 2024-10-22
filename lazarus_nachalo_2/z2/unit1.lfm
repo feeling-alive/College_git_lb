@@ -1,0 +1,110 @@
+object Form1: TForm1
+  Left = 262
+  Height = 425
+  Top = 212
+  Width = 580
+  Caption = 'Form1'
+  ClientHeight = 425
+  ClientWidth = 580
+  DesignTimePPI = 120
+  LCLVersion = '3.2.0.0'
+  object Label1: TLabel
+    Left = 44
+    Height = 20
+    Top = 32
+    Width = 159
+    Caption = 'Введите R окружности:'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 280
+    Height = 28
+    Top = 30
+    Width = 268
+    TabOrder = 0
+    OnChange = Edit1Change
+  end
+  object Edit2: TEdit
+    Left = 280
+    Height = 28
+    Top = 96
+    Width = 270
+    TabOrder = 1
+  end
+  object Label2: TLabel
+    Left = 44
+    Height = 40
+    Top = 88
+    Width = 192
+    Caption = 'Введите отношение сторон'#13#10'прямоугольника:'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 44
+    Height = 20
+    Top = 176
+    Width = 199
+    Caption = 'Диагональ прямоугольника:'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 55
+    Height = 20
+    Top = 296
+    Width = 188
+    Caption = 'Площадь прямоугольника:'
+    ParentColor = False
+    OnClick = Label4Click
+  end
+  object Button1: TButton
+    Left = 40
+    Height = 24
+    Top = 370
+    Width = 146
+    Caption = 'Вычислить'
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 220
+    Height = 24
+    Top = 370
+    Width = 144
+    Caption = 'Очистить'
+    TabOrder = 3
+    OnClick = Button2Click
+  end
+  object BitBtn1: TBitBtn
+    Left = 400
+    Height = 24
+    Top = 370
+    Width = 146
+    Caption = 'Выход'
+    Kind = bkAbort
+    ModalResult = 3
+    OnClick = BitBtn1Click
+    TabOrder = 4
+  end
+  object Panel1: TPanel
+    Left = 541
+    Height = 62
+    Top = 146
+    Width = 212
+    Caption = 'Panel1'
+    TabOrder = 5
+  end
+  object Memo1: TMemo
+    Left = 280
+    Height = 78
+    Top = 146
+    Width = 270
+    TabOrder = 6
+  end
+  object Memo2: TMemo
+    Left = 280
+    Height = 78
+    Top = 272
+    Width = 270
+    TabOrder = 7
+  end
+end
